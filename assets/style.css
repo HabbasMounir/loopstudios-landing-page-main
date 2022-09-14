@@ -164,6 +164,7 @@ overflow: visible;
 /* ///////////////////// */
 .creations--section{
     display: grid;
+    place-content: center;
     grid-template-areas: 
     ". creations--title  . creations--more "
     ". creations--Gallery  creations--Gallery creations--Gallery "
@@ -206,7 +207,7 @@ text-transform: uppercase;
 }
 .creations__Gallery{
     grid-area: creations--Gallery;
-    /* place-content: center; */
+
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
