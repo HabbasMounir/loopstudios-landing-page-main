@@ -236,11 +236,11 @@ text-transform: uppercase;
 }
 
 .card__title{
-    /* display: none; */
+
     position:relative;
     top: 80%;
     margin: 0px 10px;
-    width: 200px;
+
 
 
 }
@@ -296,6 +296,82 @@ gap: 20px;
 
 }
 
+
+
+@media  (max-width: 950px) {
+    .creations--section{
+        padding: 0 20vw;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        justify-items: center;
+
+
+                    grid-template-areas: 
+            "  creations--title   "
+            "  creations--Gallery  "
+            "  creations--more"
+            ;
+                }
+        .card__Gallery{
+            height: 20vh;
+            width: 60vw;
+            font-size: 4vh;
+            box-shadow: inset 0 1000px 100px 0px rgb(255, 255, 255);
+        
+            -webkit-transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
+        
+        
+        .creation__more{
+        
+        display: inline;
+        padding: 10px;
+        font-size: 2.5vh;
+        }
+        
+        .creation__title{
+            margin: 50px  0;
+            font-weight: 300;
+            font-size: 7vw;
+        }
+        .creations__Gallery{
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0s ease-in-out;
+        }
+        
+        .card__Gallery:hover{
+            color: var(--White);
+            box-shadow: inset 0 -1000px 100px 0px rgba(255, 255, 255, 0.644);
+        }
+        
+        .desktop{
+            display: none;
+        
+        }
+        .mobile{
+            display: block;
+            height: 20vh;
+            width:60vw;
+            
+        }
+        
+        .card__title{
+            width: 250px; 
+                text-align: start;
+    position:relative;
+    top: 50%;
+    padding: 0px 20px;
+
+        }
+        
+}
+
+
+
+
 @media only screen and (max-width: 750px) {
     .header__nav{
         display: flex;
@@ -334,11 +410,11 @@ gap: 20px;
     @keyframes click{
         0%{
             opacity: 0;
-        transform: translate(-100%,0px) ;
+        transform: translate(100%,0px) ;
         }
         10%{
             opacity: 0;
-            transform: translate(-50%,0px)
+            transform: translate(50%,0px)
         }
         100%{
             opacity: 1;
@@ -475,7 +551,7 @@ font-size: 2.5vh;
     /* display: none; */
     position:relative;
     top: 50%;
-    /* left: -10%; */
+    width: 200px; 
     padding: 10px 10px;
 }
 
